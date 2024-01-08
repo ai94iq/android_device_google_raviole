@@ -2,10 +2,6 @@
 
 # product partition
 
-# AiAi
-product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
-product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk;PRESIGNED
-
 # Audio
 product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
@@ -15,6 +11,9 @@ product/etc/firmware/music_detector.sound_model_2
 # Camera extensions
 product/etc/permissions/androidx.camera.extensions.impl.xml
 product/priv-app/PixelCameraServicesOriole/PixelCameraServicesOriole.apk;PRESIGNED
+
+# UV
+system_ext/priv-app/UvExposureReporter/UvExposureReporter.apk;PRESIGNED
 
 # Felica
 product/etc/felica/common.cfg
@@ -35,14 +34,6 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
-product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
-product/etc/sysconfig/nexus.xml
-product/etc/sysconfig/pixel_experience_2017.xml
-product/etc/sysconfig/pixel_experience_2018.xml
-product/etc/sysconfig/pixel_experience_2019.xml
-product/etc/sysconfig/pixel_experience_2019_midyear.xml
-product/etc/sysconfig/pixel_experience_2020.xml
-product/etc/sysconfig/pixel_experience_2020_midyear.xml
 product/etc/sysconfig/pixel_experience_2021.xml
 product/etc/sysconfig/pixel_experience_2021_midyear.xml
 
@@ -56,6 +47,7 @@ product/lib64/libdmengine.so
 product/lib64/libdmjavaplugin.so
 product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
+product/priv-app/CbrsNetworkMonitor/CbrsNetworkMonitor.apk
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
 product/priv-app/DMService/DMService.apk
@@ -95,6 +87,9 @@ system_ext/lib64/com.google.edgetpu_app_service-V2-ndk.so
 system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 system_ext/lib64/libedgetpu_dba.google.so
 
+# GCS
+product/priv-app/GCS/GCS.apk;PRESIGNED
+
 # HBM
 system_ext/lib64/libhbmsvmanager_jni.so
 system_ext/priv-app/HbmSVManager/HbmSVManager.apk
@@ -104,6 +99,7 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
+product/priv-app/ImsServiceEntitlement/ImsServiceEntitlement.apk;PRESIGNED
 system_ext/etc/permissions/com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.qualifiednetworksservice.xml
 system_ext/etc/permissions/com.shannon.rcsservice.xml
@@ -140,7 +136,28 @@ system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.ap
 system_ext/priv-app/RilConfigService/RilConfigService.apk
 system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
 
+# Repair Mode
+system_ext/app/RepairMode/RepairMode.apk
+
+# Odad
+product/priv-app/OdadPrebuilt/OdadPrebuilt.apk;PRESIGNED
+
+# Overlays
+-product/overlay/PixelBatteryHealthOverlay.apk
+-product/overlay/SettingsGoogleOrioleOverlay.apk
+-product/overlay/HbmSVManager__auto_generated_rro_product.apk:product/overlay/HbmSVManagerOverlay.apk
+-product/overlay/UdfpsOverlay.apk
+-product/overlay/DeviceAsWebcamOriole.apk
+-product/overlay/SettingsOverlayG9S9B.apk
+-product/overlay/SettingsOverlayGB7N6.apk
+-product/overlay/SettingsOverlayGR1YH.apk
+-product/overlay/SimAppDialog__auto_generated_rro_product.apk:product/overlay/SimAppDialogOverlay.apk
+-product/overlay/Telecom__auto_generated_rro_product.apk:product/overlay/TelecomOverlay.apk
+-product/overlay/TelephonyProvider__auto_generated_rro_product.apk:product/overlay/TelephonyProviderOverlay.apk
+-product/overlay/TeleService__auto_generated_rro_product.apk:product/overlay/TeleServiceOverlay.apk
+
 # RIL
+product/priv-app/SSRestartDetector/SSRestartDetector.apk
 system_ext/app/OemRilHookService/OemRilHookService.apk
 system_ext/etc/permissions/com.samsung.slsi.telephony.oemril.xml
 system_ext/etc/permissions/oemrilhook.xml
@@ -149,6 +166,7 @@ system_ext/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
 system_ext/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 system_ext/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
 system_ext/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
+system_ext/priv-app/TelephonyGoogle/TelephonyGoogle.apk
 system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 
 # VZW
@@ -156,3 +174,6 @@ system_ext/etc/permissions/com.verizon.llkagent.xml
 system_ext/etc/permissions/vzw_mvs_permissions.xml
 system_ext/priv-app/LLKAgent/LLKAgent.apk
 system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
+
+# Iwlan
+system_ext/priv-app/Iwlan/Iwlan.apk;PRESIGNED
