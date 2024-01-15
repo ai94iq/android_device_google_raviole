@@ -11,6 +11,8 @@ product/etc/firmware/music_detector.sound_model_2
 # Camera extensions
 product/etc/permissions/androidx.camera.extensions.impl.xml
 product/priv-app/PixelCameraServicesOriole/PixelCameraServicesOriole.apk;PRESIGNED
+system_ext/app/PersistentBackgroundCameraServices/PersistentBackgroundCameraServices.apk
+system_ext/etc/vintf/manifest/com.google.pixel.camera.services@1.0-service-google.xml
 
 # UV
 system_ext/priv-app/UvExposureReporter/UvExposureReporter.apk;PRESIGNED
@@ -76,6 +78,9 @@ system_ext/etc/permissions/com.google.android.camerax.extensions.xml
 system_ext/framework/com.google.android.camera.experimental2022_system.jar
 system_ext/framework/com.google.android.camera.extensions.jar
 system_ext/framework/com.google.android.camerax.extensions.jar
+system_ext/framework/com.google.pixel.camera.connectivity.jar
+system_ext/framework/com.google.pixel.camera.services.cameraidremapper.jar
+system_ext/framework/com.google.pixel.camera.services.lyricconfigprovider.jar
 
 # Edge TPU
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
@@ -177,3 +182,6 @@ system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 
 # Iwlan
 system_ext/priv-app/Iwlan/Iwlan.apk;PRESIGNED
+
+# Init
+system_ext/etc/init/init.repair_mode.rc
