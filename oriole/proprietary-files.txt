@@ -95,10 +95,6 @@ system_ext/lib64/libedgetpu_dba.google.so
 # GCS
 product/priv-app/GCS/GCS.apk;PRESIGNED
 
-# HBM
-system_ext/lib64/libhbmsvmanager_jni.so
-system_ext/priv-app/HbmSVManager/HbmSVManager.apk
-
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
@@ -148,14 +144,23 @@ system_ext/app/RepairMode/RepairMode.apk
 product/priv-app/OdadPrebuilt/OdadPrebuilt.apk;PRESIGNED
 
 # Overlays
+-product/overlay/framework-res__auto_generated_rro_product.apk:product/overlay/OrioleFramework.apk
+-product/overlay/Flipendo__auto_generated_rro_product.apk:product/overlay/OrioleFlipendo.apk
+-product/overlay/DMService__auto_generated_rro_product.apk:product/overlay/OrioleDMService.apk
+-product/overlay/ManagedProvisioningPixelOverlay.apk
 -product/overlay/PixelBatteryHealthOverlay.apk
+-product/overlay/PixelConnectivityOverlay2021.apk
+-product/overlay/PixelSetupWizardOverlay2021.apk
+-product/overlay/PixelTetheringOverlay2021.apk
+-product/overlay/WifiOverlay/PixelWifiOverlay2021.apk
 -product/overlay/SettingsGoogleOrioleOverlay.apk
--product/overlay/HbmSVManager__auto_generated_rro_product.apk:product/overlay/HbmSVManagerOverlay.apk
+-product/overlay/SettingsGoogleOverlayPixel2021.apk
 -product/overlay/UdfpsOverlay.apk
 -product/overlay/DeviceAsWebcamOriole.apk
 -product/overlay/SettingsOverlayG9S9B.apk
 -product/overlay/SettingsOverlayGB7N6.apk
 -product/overlay/SettingsOverlayGR1YH.apk
+-product/overlay/SettingsGoogle__auto_generated_rro_product.apk:product/overlay/OrioleSettingsGoogle.apk
 -product/overlay/SimAppDialog__auto_generated_rro_product.apk:product/overlay/SimAppDialogOverlay.apk
 -product/overlay/Telecom__auto_generated_rro_product.apk:product/overlay/TelecomOverlay.apk
 -product/overlay/TelephonyProvider__auto_generated_rro_product.apk:product/overlay/TelephonyProviderOverlay.apk
