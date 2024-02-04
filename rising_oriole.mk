@@ -33,6 +33,9 @@ PRODUCT_NAME := rising_oriole
 RISING_MAINTAINER := minaripenguin
 RISING_CHIPSET := GS101
 
+# Addons
+TARGET_HAS_UDFPS := true
+
 # Gms variables
 WITH_GMS := true
 
